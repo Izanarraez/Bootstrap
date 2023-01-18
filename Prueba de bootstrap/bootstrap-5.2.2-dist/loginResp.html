@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Login responsive</title>
+
+    <style>
+        .bg{
+            background-image: url(img/homer.gif);
+            background-position: center center;
+        }
+        body{
+            background:#ffe259;
+            background:linear-gradient(to right, #ffa751, #ffe259); /*esto es para juntar los dos oclores*/
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container w-75 bg-light mt-5 rounded shadow"> <!--w es weight-->
+
+        <div class="row">
+
+            <div class="col bg d-none d-lg-block rounded"></div> <!--imagen--> <!--el bg llaga a la url echa arriba en el style-->
+                                                         <!--el d-none hace desaparecer la imagen y con d-lg-block la hace aparecer en tamaños grandes-->
+            <div class="col"> <!--formulario--> <!--si pusiera bg-white se modifican las demas clases-->
+
+                <div class="text-end mt-2">
+                    <img src="img/rosa.jpg" alt="" width="95"><!--pone width debido a que para empezar es mejor controlar el tamña asi de la imagen-->
+                </div>
+
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2> <!--class="fw-bold" esta clase es para ponerlo en negrita-->
+                                                                          <!--pt es padding top de 5 y mt es margin top de 5-->
+                                                                          <!--en py-5 es para pading top y pading bottom-->
+                <form action="#">
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Correo electronico</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+
+                    <div class="mb-4">
+                        <input type="checkbox" name="connected" class="form-check-label">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+
+                    <div class="d-grid"> <!--para que el bootn ocupe todo el espacio-->
+                        <button type="submit" class="btn btn-danger btn-outline-dark">Iniciar sesion</button>
+                    </div>
+
+                    <div class="my-3">
+                        <span>¿No tienes cuenta? <a href="#">Registrate</a></span>
+                        <br>
+                        <span><a href="#">Recuperar password</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> <!--js/bootstrap.bundle.min.js(la bundle recoge los dos pero en versiones antigua falla)-->
+</body>
+</html>

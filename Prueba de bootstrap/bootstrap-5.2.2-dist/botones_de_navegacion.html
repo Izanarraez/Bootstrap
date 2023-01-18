@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Botones de navgacion</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+        <div class="btn-group">
+            <button type="button" class="btn btn-warning btn-outline-dark">Samsung</button>
+            <button type="button" class="btn btn-warning btn-outline-dark">Apple</button> <!--boton desabilitado desabilited-->
+
+                <button type="button" class="btn btn-warning btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Sony</button>  <!--activar boton activated-->
+                <div class="dropdown-menu">
+
+                    <h6 class="dropdown-header">Encabezado</h6>
+
+                    <a href="#" class="dropdown-item">Tablets</a>
+                    <a href="#" class="dropdown-item">Movil</a>
+
+                    <div href="#" class="dropdown-divider"></div>
+
+                    <a href="#" class="dropdown-item">Ordenador</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>       
+    <script src="js/popper.min.js"></script> <!--para que funcione bien se requiere esto(dropdown-menu)-->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

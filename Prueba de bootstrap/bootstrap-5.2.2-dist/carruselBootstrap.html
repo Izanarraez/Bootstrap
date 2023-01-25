@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Carrusel</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">  
+                <div id="demo" class="carousel" data-bs-ride="carousel">
+                    <!--indicadores-->
+                    <ul class="carousel-indicators">
+                        <li data-bs-target="demo" data-bs-slide-to="0" class="active"></li> <!--para que funcione la clase debe de estar activa-->
+                        <li data-bs-target="demo" data-bs-slide-to="1"></li>
+                        <li data-bs-target="demo" data-bs-slide-to="2"></li>
+                    </ul>
+                    <!--imagenes-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"> <!--el primer elemento hay que ponerlo activo o no saldran las demas, ni esta-->
+                            <img src="img/rosa.jpg" class="d-block w-100">
+                            <div class="carousel-caption"> <!--para dar titulo a la imagen en el carrusel-->
+                                <h3>Primer titulo</h3>
+                                <p>Esta es la descripcion de la imagen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item"> <!--el primer elemento hay que ponerlo activo o no saldran las demas, ni esta-->
+                            <img src="img/índice2.jpg" class="d-block w-100">
+                            <div class="carousel-caption"> <!--para dar titulo a la imagen en el carrusel-->
+                                <h3>Segundo titulo</h3>
+                                <p>Esta es la descripcion de la imagen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item"> <!--el primer elemento hay que ponerlo activo o no saldran las demas, ni esta-->
+                            <img src="img/índice.jpg" class="d-block w-100">
+                            <div class="carousel-caption"> <!--para dar titulo a la imagen en el carrusel-->
+                                <h3>Tercer titulo</h3>
+                                <p>Esta es la descripcion de la imagen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--controles de izquierda y derecha-->
+                    <a href="#demo" class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                    <a href="#demo" class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> <!--js/bootstrap.bundle.min.js(la bundle recoge los dos pero en versiones antigua falla)-->
+</body>
+</html>

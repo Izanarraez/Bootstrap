@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+                <!--Boton de modal-->
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#mimodal">Consultar</button>
+                <!--MODAL-->
+                <div class="modal fade" id="mimodal">
+                    <div class="modal-dialog modal-lg modal-dialog-centered"> <!--en vez de modal-fullscreen se puede usar modal-dialog-centered y queda mas bonito-->
+                        <div class="modal-content">
+                            <!--Cabecera de dialogo-->
+                            <div class="modal-header">
+                                <h4 class="modal-tittle">Cabecera</h4>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!--Cabecera de dialogo-->
+                            <div class="modal-body"> <!--aqui tambien se podrian usar targetas, formularios o lo que quieras-->
+                                <p>Mis pasos en esta calle <br>
+
+                                    Resuenan <br>
+                                    
+                                    En otra calle <br>
+                                    
+                                    Donde <br>
+                                    
+                                    Oigo mis pasos <br>
+                                    
+                                    Pasar en esta calle <br>
+                                    
+                                    Donde <br>
+                                    
+                                    Sólo es real la niebla. <br></p>
+                            </div>
+                            <!--pie de dialogo-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> <!--js/bootstrap.bundle.min.js(la bundle recoge los dos pero en versiones antigua falla)-->
+</body>
+</html>

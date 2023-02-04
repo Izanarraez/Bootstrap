@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Actividad</title>
+    <style>
+        body {
+        margin-top: 30px;
+      }
+      
+      .block {
+        height: 250px;
+        color: #212529;
+        background: rgba(86,61,124,.15);
+        margin-bottom: 30px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-around">
+            <div class="col-5 col-xl-3 order-0 order-xl-0 d-flex block">1</div>
+            <div class="col-5 col-xl-7 order-1 order-xl-1 d-flex block">2</div>
+            <div class="col-5 col-xl-3 order-3 order-xl-2 d-flex block">3</div>
+            <div class="col-11 col-xl-3 order-2 order-xl-3 d-flex block">4</div>
+            <div class="col-5 col-xl-3 order-4 order-xl-4 d-flex block">5</div>
+        </div>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> <!--js/bootstrap.bundle.min.js(la bundle recoge los dos pero en versiones antigua falla)-->
+</body>
+</html>
